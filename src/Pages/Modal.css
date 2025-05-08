@@ -1,0 +1,138 @@
+
+  
+  /* Modal styles */
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(51, 51, 51, 0.4); /* opacity */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  .modal-container {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    width: 400px;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  }
+  .modal-container2 {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    width: 500px;
+    
+    position: relative;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  }
+  
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .close-btn {
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  .form-row {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+  }
+  
+  .form-row input {
+    background-color: #FFDEE287;
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #f4cccc;
+    border-radius: 5px;
+  }
+  
+  .form-group {
+    margin-top: 15px;
+  }
+  
+  .gender-options {
+    display: flex;
+    gap: 15px;
+    margin-top: 5px;
+  }
+  .gender-options label{
+    background-color: #FFDEE287;
+  }
+  
+  .form-group label {
+    text-align: start;
+    display: block;
+    padding: 5px;
+    margin-top: 5px;
+  }
+  .custom-notification {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #f44336;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    z-index: 1000;
+    width: auto;
+    max-width: 80%;
+    text-align: center;
+  }
+  .modal-header2{
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+  }
+  
+  .lang{
+    background-color: #FFDEE287;
+    width: 200px;
+  }
+  .email-input {
+    background-color: #FFDEE287;
+    width: 94%;
+    padding: 10px;
+    border: 1px solid #f4cccc;
+    border-radius: 5px;
+    margin-top: 15px;
+  }
+  
+  .checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 15px;
+  }
+  
+  .checkbox-group a {
+    color: #ff4c61;
+    text-decoration: none;
+  }
+  
+  .submit-btn {
+    width: 100%;
+    background-color: #ff4c61;
+    color: white;
+    border: none;
+    padding: 12px;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .modal-header p{
+    text-align: start;
+  }
