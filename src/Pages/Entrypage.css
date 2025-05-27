@@ -77,7 +77,7 @@ height: 60px;
   }
   
   .hero h1 span {
-    color: #28a745; /* Highlight color */
+    color: #28a745;
   }
   
   .hero p {
@@ -166,7 +166,7 @@ height: 60px;
 }
   
   .analytics-card {
-    width: 40%; /* Set to 40% of the container */
+    width: 40%;
     padding: 20px;
   }
   
@@ -203,7 +203,7 @@ height: 60px;
     justify-content: center;
     height: 400px;
     position: relative;
-    z-index: 2; /* In front */
+    z-index: 2;
   }
   
   .analytics-card p {
@@ -225,10 +225,10 @@ height: 60px;
   }
   
   .content-card {
-    width: 60%; /* Set to 60% of the container for the image */
+    width: 60%; 
     display: flex;
     margin-right: -75px;
-    justify-content: flex-end; /* Align the image to the right */
+    justify-content: flex-end; 
   }
   .content-text{
    width: 75%;
