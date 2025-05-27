@@ -15,26 +15,33 @@ function Entrypage() {
   };
 
   const navigate = useNavigate();
+
   return (
     <div className="container">
       {/* Header Section */}
       <header className="header">
         <div className="logo">
-          <span>
-            <img src="/Images/logo.png" alt="logopng" />
-          </span>
+          <img src="/Images/logo.png" alt="Logo" />
         </div>
-        <div className="menu">
+        <nav className="menu">
           <div>About Us</div>
           <div>Features</div>
           <div>More Options</div>
           <div>Contact</div>
-        </div>
+        </nav>
         <div className="Entry_buttons">
-          <button className="login-btn" >
+          <button
+            className="login-btn"
+            onClick={() => navigate("/login")}
+            aria-label="Log in to your account"
+          >
             Log in
           </button>
-          <button className="signup-btn" >
+          <button
+            className="signup-btn"
+            onClick={() => navigate("/signup")}
+            aria-label="Sign up for a new account"
+          >
             Sign up
           </button>
         </div>
@@ -42,7 +49,6 @@ function Entrypage() {
 
       {/* Hero Section */}
       <section className="hero">
-        {/* Left Content */}
         <div className="hero-content">
           <h1>
             Simplify Your Life with Our <br />
@@ -54,26 +60,67 @@ function Entrypage() {
             your lifestyle.
           </p>
           <div className="hero-buttons">
-            <button className="cta-btn" onClick={() => setShowModal(true)}>
-              Get Started
+            <button
+              className="cta-btn"
+              onClick={() => setShowModal(true)}
+              aria-label="Get started with the Todo app"
+            >
+              Get Started Today
             </button>
-            {showModal && (
-              <Modal
-                onClose={() => setShowModal(false)}
-                onSubmit={handleSubmit}
-              />
-            )}
-            {showSuccess && (
-              <SuccessModal onClose={() => setShowSuccess(false)} />
-            )}
-            <button className="learn-more-btn">Learn More</button>
+            <button
+              className="learn-more-btn"
+              onClick={() => navigate("/features")}
+              aria-label="Learn more about the Todo app"
+            >
+              Discover Features
+            </button>
           </div>
         </div>
+        {/* Right Image (Optional) */}
+        <div className="hero-image">{/* Add an image here if needed */}</div>
+      </section>
 
-        {/* Right Image */}
-        <div className="hero-img">
-          <img src="/Images/Header.png" alt="Analytics" />
+      {/* Modals */}
+      {showModal && (
+        <Modal onClose={() => setShowModal(false)} onSubmit={handleSubmit} />
+      )}
+      {showSuccess && <SuccessModal onClose={() => setShowSuccess(false)} />}
+
+      {/* Hero Section */}
+      <section className="hero-section2">
+        <div className="hero-content-left">
+          <h1>
+            <span className="n1">Organize.</span>
+            <br />
+            <span className="n2">Achieve.</span>
+            <br />
+            <span className="n3">Relax.</span>
+          </h1>
+          <p>
+            Turn clutter into clarity, chaos into control, and dreams into done.
+            <br />
+            Bold visions into market success.
+          </p>
+          <div className="hero-actions">
+            <button
+              className="hero-btn-primary"
+              onClick={() => setShowModal(true)}
+            >
+              Get Started Today
+            </button>
+            <button
+              className="hero-btn-secondary"
+              onClick={() => navigate("/features")}
+            >
+              Discover Features
+            </button>
+            
+          </div>
         </div>
+        <div>
+              <img src="/Images/Card.png" alt="" />
+            </div>
+            <div className="downstrip"><img src="/Images/Logo Strip.png" alt="" /></div>
       </section>
 
       {/* Analytics Section */}
@@ -83,19 +130,18 @@ function Entrypage() {
             Transform Your Productivity with Our Innovative To-Do List Features
           </h3>
         </div>
-
         <div className="analytics-img">
           <div>
-            <img src="/Images/Group 23.png" alt="" />
+            <img src="/Images/Group 23.png" alt="Feature 1" />
           </div>
           <div>
-            <img src="/Images/Group 24.png" alt="" />
+            <img src="/Images/Group 24.png" alt="Feature 2" />
           </div>
           <div>
-            <img src="/Images/Group 25.png" alt="" />
+            <img src="/Images/Group 25.png" alt="Feature 3" />
           </div>
           <div>
-            <img src="/Images/Group 26.png" alt="" />
+            <img src="/Images/Group 26.png" alt="Feature 4" />
           </div>
         </div>
       </section>
@@ -109,7 +155,7 @@ function Entrypage() {
         <div className="image-container">
           <img
             src="/Images/Vector (1).png"
-            alt="Contentimg"
+            alt="Vector illustration"
             className="vector-img"
           />
           <img
@@ -125,7 +171,7 @@ function Entrypage() {
         <div>
           <img
             src="/Images/Photo rectangle.png"
-            alt="Frame"
+            alt="Frame illustration"
             className="frameimg"
           />
         </div>
@@ -136,19 +182,20 @@ function Entrypage() {
             list platform!
           </p>
           <div className="hero-buttons">
-            <button className="cta-btn" onClick={() => setShowModal(true)}>
+            <button
+              className="cta-btn"
+              onClick={() => setShowModal(true)}
+              aria-label="Get started with the Todo app"
+            >
               Get Started
             </button>
-            {showModal && (
-              <Modal
-                onClose={() => setShowModal(false)}
-                onSubmit={handleSubmit}
-              />
-            )}
-            {showSuccess && (
-              <SuccessModal onClose={() => setShowSuccess(false)} />
-            )}
-            <button className="learn-more-btn">Learn More</button>
+            <button
+              className="learn-more-btn"
+              onClick={() => navigate("/features")}
+              aria-label="Learn more about the Todo app"
+            >
+              Learn More
+            </button>
           </div>
         </div>
       </section>
@@ -160,7 +207,3 @@ function Entrypage() {
 }
 
 export default Entrypage;
-
-
-  //  Aditya Mohite 
-  // adityamohite4973@gmail.com

@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Entrypage from "./components/EntryPage.jsx";
+import Entrypage from "./components/Entrypage";
 
 function App() {
     return (
